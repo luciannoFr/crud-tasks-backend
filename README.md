@@ -1,6 +1,4 @@
-¡Claro! Aquí tienes el README actualizado para incluir la instrucción de importar la base de datos desde un archivo `task_db.sql` que estará en el repositorio.
 
----
 
 # CRUD de Tareas
 
