@@ -1,4 +1,4 @@
-const connection = require("../databases/connection/crear_conexion_db"); 
+import {connection} from '../databases/connection/crear_conexion_db.js';
 
 async function Alltareas(req, res) {
   const sql = 'SELECT * FROM tasks'; 
@@ -16,4 +16,4 @@ async function Alltareas(req, res) {
   });
 }
 
-module.exports = Alltareas;
+export default Alltareas;

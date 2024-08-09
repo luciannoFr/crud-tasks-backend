@@ -1,4 +1,4 @@
-const connection = require('../databases/connection/crear_conexion_db');
+import {connection} from '../databases/connection/crear_conexion_db.js';
 
 // Función para verificar si ya existe una tarea con el mismo título
 const verificarTitle = async (title) => {
@@ -68,4 +68,4 @@ const addTarea = async (req, res) => {
     }
 };
 
-module.exports = addTarea;
+export default addTarea;

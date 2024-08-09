@@ -1,4 +1,4 @@
-const connection = require('../databases/connection/crear_conexion_db')
+import {connection} from '../databases/connection/crear_conexion_db.js';
 
 async function del_Task(req, res) {
     const id = req.params.id; 
@@ -22,5 +22,4 @@ async function del_Task(req, res) {
     });
   }  
 
-  module.exports = del_Task; 
-
+export default del_Task;

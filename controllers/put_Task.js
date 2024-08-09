@@ -1,6 +1,6 @@
-const connection = require('../databases/connection/crear_conexion_db')
+import {connection} from '../databases/connection/crear_conexion_db.js';
 
-async function put_Task(req, res) {
+ async function put_Task(req, res) {
     const id = req.params.id;
     const { title, description, isComplete } = req.body;
   
@@ -27,4 +27,4 @@ async function put_Task(req, res) {
     });
   }
   
-  module.exports = put_Task;
+  export default put_Task;

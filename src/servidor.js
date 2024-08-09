@@ -1,14 +1,14 @@
-const express = require('express');
+import express from 'express';
 
 const app = express();
 
-const routes = require('../routes/routes');
+import router from '../routes/routes.js';
 
-const bodyParser = require('body-parser');
+import bodyParser from 'body-parser';
 app.use(bodyParser.json()); 
 app.use(bodyParser.urlencoded({ extended: true })); 
 
-app.use(routes);
+app.use(router);
 
 app.listen(3000, () => {
   console.log('El servidor está funcionando en el puerto 3000');

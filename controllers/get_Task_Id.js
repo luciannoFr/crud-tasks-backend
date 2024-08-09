@@ -1,6 +1,6 @@
-const connection= require('../databases/connection/crear_conexion_db.js')
-
-async function tareaPorId(req, res) {
+import {connection} from '../databases/connection/crear_conexion_db.js';
+   
+ async function tareaPorId(req, res) {
     const id = req.params.id; 
     console.log('Obteniendo tarea con ID:', id); 
   
@@ -24,4 +24,4 @@ async function tareaPorId(req, res) {
     });
   }
   
-  module.exports = tareaPorId;
+  export default tareaPorId;

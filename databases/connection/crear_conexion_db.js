@@ -1,5 +1,5 @@
-const mysql = require('mysql2');
-const connection = mysql.createConnection({
+import mysql from 'mysql2';
+export const connection = mysql.createConnection({
     host: 'localhost',
     user: 'root',
     database: 'tasks_db'
@@ -10,4 +10,4 @@ const connection = mysql.createConnection({
     console.error('fallo en conectar la base de datos:', error);
   }
 
-  module.exports= connection
+  export default connection
